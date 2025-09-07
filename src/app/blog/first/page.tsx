@@ -1,4 +1,4 @@
-export default function firstPage(){
+export default function ProductDet(){
     return (
         <>First Page route</>
     )
