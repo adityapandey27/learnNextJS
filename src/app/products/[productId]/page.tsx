@@ -4,12 +4,11 @@ type props = {
   params: Promise<{ productId: string }>;
 };
 
-export const generateMetaData=async ({params}:props):Promise<Metadata>=>{
-  const id=(await params).productId;
-  return {
-    title:`Product ${id}`
-  }
+export async function generateMetadata({ params }: props): Promise<Metadata> {
+  const id = (await params).productId;
+  return { title: `Product ${id}` };
 }
+
 
 export default async function ProductDetails({
   params,
