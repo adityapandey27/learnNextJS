@@ -5,4 +5,4 @@ export default function NotFound(){
         <p>Could not find requested page</p>
     </div>
  )
-}
+} 
